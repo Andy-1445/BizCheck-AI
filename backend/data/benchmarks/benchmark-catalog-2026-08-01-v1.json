@@ -1,0 +1,70 @@
+{
+  "as_of": "2026-08-01",
+  "catalog_version": "benchmark-catalog-2026-08-01-v1",
+  "categories": {
+    "A": {
+      "checksum_sha256": "cae3499bce85278774af6c13495011ce4c3f5c2565cacab5aea2b157ff53a9f9",
+      "sample_count": 37679,
+      "snapshot_version": "benchmark-2026-08-01-A-v1",
+      "source_version": "gcis-benchmark-A-2026-08-v1"
+    },
+    "B": {
+      "checksum_sha256": "e2d4c313fe4e2269ae35f405d12b815c85aaab4ac50356bfc72016173976d37e",
+      "sample_count": 9500,
+      "snapshot_version": "benchmark-2026-08-01-B-v1",
+      "source_version": "gcis-benchmark-B-2026-08-v1"
+    },
+    "C": {
+      "checksum_sha256": "5253847f87d77559627b7cc537061afe9f43b7a907ae31ce01a7589591e06d54",
+      "sample_count": 181329,
+      "snapshot_version": "benchmark-2026-08-01-C-v1",
+      "source_version": "gcis-benchmark-C-2026-08-v1"
+    },
+    "D": {
+      "checksum_sha256": "cd8439ab2b2bf581ee83c3ffa548eaccbdc30b253d5466a9e76276b3df41428d",
+      "sample_count": 16831,
+      "snapshot_version": "benchmark-2026-08-01-D-v1",
+      "source_version": "gcis-benchmark-D-2026-08-v1"
+    },
+    "E": {
+      "checksum_sha256": "4e595ae2204250dd92353bdd67396c3c5a3f89d1e44fc6434456c549c1a1c7e4",
+      "sample_count": 223580,
+      "snapshot_version": "benchmark-2026-08-01-E-v1",
+      "source_version": "gcis-benchmark-E-2026-08-v1"
+    },
+    "F": {
+      "checksum_sha256": "95f2ce6a15ee1d829c828ce46905eaf888e2431503f6fb03ba86546b98a1009c",
+      "sample_count": 535081,
+      "snapshot_version": "benchmark-2026-08-01-F-v1",
+      "source_version": "gcis-benchmark-F-2026-08-v1"
+    },
+    "G": {
+      "checksum_sha256": "e66d6cb8acb6268e428d3d647261e2e4824fa70bc9171cac5d7b712b01457bfd",
+      "sample_count": 41618,
+      "snapshot_version": "benchmark-2026-08-01-G-v1",
+      "source_version": "gcis-benchmark-G-2026-08-v1"
+    },
+    "H": {
+      "checksum_sha256": "4274005dca076a3e2a9156fa0cb6ce41960eb0b543bf54f3a0fe503f375a037c",
+      "sample_count": 151041,
+      "snapshot_version": "benchmark-2026-08-01-H-v1",
+      "source_version": "gcis-benchmark-H-2026-08-v1"
+    },
+    "I": {
+      "checksum_sha256": "6ad9bf2db0926d1c23d84585e7bf8adfae378ae64960e2086762bac88787b2a0",
+      "sample_count": 350339,
+      "snapshot_version": "benchmark-2026-08-01-v1",
+      "source_version": "gcis-benchmark-I-2026-08-v1"
+    },
+    "J": {
+      "checksum_sha256": "898164c82093f4235a60a8bfe82f43a6c8f755c000be20064bdcca53ba65ccaf",
+      "sample_count": 256464,
+      "snapshot_version": "benchmark-2026-08-01-J-v1",
+      "source_version": "gcis-benchmark-J-2026-08-v1"
+    }
+  },
+  "industry_mapping_version": "gcis-regional-category-membership-v1",
+  "membership_count_note": "A company may appear in more than one category membership snapshot; this total is not a unique-company count.",
+  "membership_sample_count": 1803462,
+  "sqlite_integrity_check": "ok"
+}

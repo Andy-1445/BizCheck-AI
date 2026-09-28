@@ -1,0 +1,117 @@
+/* W4 Dashboard composition. Domain states and interactions remain in styles.css. */
+:root {
+  --dashboard-gutter: 24px;
+  --shadow: 0 8px 28px rgba(16, 36, 62, .045);
+  --radius-lg: 18px;
+}
+html, body { min-width: 0; }
+.app-shell { background: var(--paper); }
+.site-header { background: var(--surface); }
+.header-inner, .main-content, .site-footer { width: min(1200px, calc(100% - 48px)); }
+.main-content { padding-block: 32px 64px; }
+.thesis, .search-form, .verification-rail { margin-inline: clamp(24px, 4vw, 40px); }
+.thesis { max-width: 880px; padding-top: 32px; }
+.thesis h1 { max-width: 880px; font-size: clamp(28px, 3.5vw, 42px); line-height: 1.35; letter-spacing: -.035em; }
+.thesis h1.thesis-eyebrow { max-width: 880px; margin: 0 0 9px; font-size: clamp(28px, 3.5vw, 42px); line-height: 1.35; letter-spacing: -.035em; }
+.thesis > p:last-child { max-width: 800px; margin-top: 12px; font-size: 16px; }
+.search-form { margin-top: 24px; }
+.section-kicker, .eyebrow { font-family: inherit; letter-spacing: .04em; }
+.company-card-header h2 { font-size: clamp(25px, 3.2vw, 38px); line-height: 1.4; }
+.company-card-header { margin-bottom: 0; padding-bottom: 24px; }
+.report-navigation { display: flex; flex-wrap: wrap; gap: 8px; padding-block: 20px; border-bottom: 1px solid var(--line); }
+.report-navigation a { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink-soft); text-decoration: none; font-size: 14px; font-weight: 600; }
+.report-navigation a:hover { background: var(--verify-soft); border-color: var(--verify); color: var(--verify-dark); }
+:is(#company-overview, #company-score, #company-ai, #business-title, #bizscore-explanation) { scroll-margin-top: 24px; }
+.company-facts { margin-block: 24px 0; border-radius: 12px; overflow: hidden; }
+.fact { min-height: 104px; padding: 20px; }
+.fact dd { font-variant-numeric: tabular-nums; font-size: 18px; }
+.bizscore-heading h3, .ai-analysis-heading h3, .ai-comparison-heading h3 { font-size: clamp(22px, 2.5vw, 28px); line-height: 1.4; }
+.score-ledger { grid-template-columns: minmax(260px, .8fr) minmax(0, 1.6fr); align-items: start; gap: 24px; }
+.score-docket { min-height: 0; background: var(--ink); border-radius: 14px; }
+.score-docket::after { display: none; }
+.dimension-sheet { border-radius: 14px; }
+.peer-grid { gap: 16px; }
+.peer-metric { background: var(--surface); }
+.ai-analysis-section, .ai-comparison-panel { border: 1px solid var(--line); border-radius: 14px; background: var(--surface); box-shadow: none; }
+.ai-comparison-panel::before { display: none; }
+.ai-analysis-heading, .ai-comparison-heading { padding: var(--dashboard-gutter); min-height: 88px; background: var(--surface-raised); border-bottom: 1px solid var(--line); }
+.ai-heading-icon, .ai-comparison-mark { border-radius: 10px; background: var(--registry); }
+.ai-score-boundary, .ai-comparison-boundary { padding: 16px var(--dashboard-gutter); background: var(--verify-soft); color: var(--verify-dark); font-size: 13px; line-height: 1.8; }
+.ai-analysis-intro, .ai-comparison-intro, .ai-comparison-loading, .ai-comparison-error,
+.ai-report-summary, .ai-comparison-summary, .ai-findings-section, .ai-verification-section,
+.ai-limitations-section, .ai-comparison-section, .ai-comparison-limitations,
+.ai-comparison-audit, .ai-comparison-action { padding: var(--dashboard-gutter); }
+.ai-report-snapshot dt, .ai-comparison-snapshot dt { font-size: 12px; }
+.ai-report-snapshot dd, .ai-comparison-snapshot dd { font-size: 13px; overflow-wrap: anywhere; }
+.ai-preview-grid small, .ai-comparison-preview small { font-size: 13px; line-height: 1.7; }
+.ai-report-layout, .ai-comparison-two-column { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+.ai-verification-section, .ai-comparison-questions { background: var(--surface-raised); }
+.ai-comparison-action { border-top: 1px solid var(--line); background: var(--surface-raised); }
+.ai-company-note-grid { gap: 16px; }
+.comparison-report-header h2 { line-height: 1.4; font-size: clamp(25px, 3.2vw, 38px); }
+.comparison-mobile-card { box-shadow: none; }
+.benchmark-reference, .ai-report-footer, .ai-comparison-audit { overflow-wrap: anywhere; }
+button { min-height: 44px; }
+summary { min-height: 44px; align-content: center; }
+.company-card, .comparison-report, .ai-heading-lockup, .ai-comparison-title-lockup { min-width: 0; }
+
+/* Comfortable reading scale for explanatory and supporting content. */
+.section-kicker, .eyebrow { font-size: 13px; }
+.source-line, .company-id, .stale-data-notice, .partial-warning,
+.data-quality-warning, .business-disclaimer { font-size: 14px; line-height: 1.7; }
+.sample-badge, .benchmark-reference, .peer-metric > p,
+.dimension-summary, .evidence-list span, .dimension-warning-list,
+.score-warnings, .ai-error-helper { font-size: 14px; line-height: 1.7; }
+.peer-axis { font-size: 12px; line-height: 1.5; }
+.peer-metric dt, .peer-metric dd { font-size: 13px; }
+.provisional-stamp, .ai-report-status, .ai-report-flags span,
+.ai-comparison-output-status, .ai-comparison-cache-badge { font-size: 13px; }
+.ai-report-snapshot dt, .ai-comparison-snapshot dt { font-size: 13px; }
+.ai-report-snapshot dd, .ai-comparison-snapshot dd { font-size: 14px; line-height: 1.6; }
+.ai-report-section-heading > span, .ai-comparison-section-heading > span { font-size: 13px; }
+.ai-findings-list, .ai-verification-list, .ai-limitations-list,
+.ai-findings-list p, .ai-verification-list p, .ai-limitations-list p { font-size: 15px; line-height: 1.75; }
+.ai-limitations-list li { padding: 16px; }
+.ai-limitations-list strong { font-size: 15px; line-height: 1.55; }
+.ai-limitations-list small { color: var(--ink-soft); font-size: 14px; line-height: 1.7; }
+.ai-fixed-disclaimer p, .ai-comparison-disclaimer p { font-size: 15px; line-height: 1.75; }
+.ai-comparison-limitations > ul strong { font-size: 15px; line-height: 1.55; }
+.ai-comparison-limitations > ul small { color: var(--ink-soft); font-size: 14px; line-height: 1.7; }
+.ai-comparison-evidence { font-size: 14px; line-height: 1.7; }
+.ai-comparison-evidence li span, .ai-comparison-evidence li strong { font-size: 13px; line-height: 1.6; }
+.business-list, .business-disclaimer { font-size: 15px; line-height: 1.75; }
+.ai-content-label, .ai-comparison-role { font-size: 13px; }
+.ai-findings-list > li > p, .ai-verification-list > li > p { font-size: 15px; line-height: 1.75; }
+.ai-caveat, .ai-comparison-caveat, .ai-evidence { font-size: 14px; line-height: 1.7; }
+.ai-topic-label, .ai-priority, .ai-comparison-fallback-label { font-size: 12px; }
+.ai-evidence li span, .ai-evidence li strong { font-size: 13px; line-height: 1.6; }
+.ai-question-topline > span:last-child { font-size: 12px; }
+.ai-comparison-fallback-note p, .ai-comparison-error small { font-size: 14px; line-height: 1.7; }
+.ai-comparison-disclaimer, .ai-fixed-disclaimer { color: #263c55; }
+
+@media (max-width: 1000px) {
+  .score-ledger { grid-template-columns: 1fr; }
+  .ai-report-layout, .ai-comparison-two-column { grid-template-columns: 1fr; }
+  .ai-findings-section { border-right: 0; border-bottom: 1px solid var(--line); }
+}
+@media (max-width: 680px) {
+  :root { --dashboard-gutter: 18px; }
+  .header-inner, .main-content, .site-footer { width: calc(100% - 28px); }
+  .main-content { padding-block: 20px 40px; }
+  .thesis, .search-form, .verification-rail { margin-inline: 20px; }
+  .thesis { padding-top: 24px; }
+  .thesis h1 { font-size: 28px; }
+  .thesis > p:last-child { font-size: 15px; }
+  .company-card { padding: 20px; }
+  .company-facts { grid-template-columns: 1fr; }
+  .report-navigation { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .report-navigation a { padding: 10px; font-size: 13px; }
+  .ai-analysis-heading, .ai-comparison-heading { align-items: flex-start; flex-direction: column; gap: 12px; }
+  .ai-heading-lockup, .ai-comparison-title-lockup { align-items: flex-start; }
+  .ai-report-summary, .ai-comparison-summary { display: block; }
+  .ai-report-snapshot, .ai-comparison-snapshot { margin: 20px 0 0; padding: 16px 0 0; border-left: 0; border-top: 1px solid var(--line); }
+  .ai-preview-grid, .ai-comparison-preview, .ai-company-note-grid { grid-template-columns: 1fr; }
+  .ai-comparison-panel { margin-inline: 16px; }
+  .company-card-actions, .ai-generate-row, .ai-comparison-action { align-items: stretch; flex-direction: column; }
+  .company-card-actions button, .ai-generate-row button, .ai-comparison-action button { width: 100%; justify-content: center; }
+}

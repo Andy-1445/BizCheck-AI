@@ -1,0 +1,88 @@
+{
+  "as_of": "2026-08-01",
+  "catalog_version": "benchmark-catalog-2026-08-01-v1",
+  "categories": {
+    "A": {
+      "canonical_bytes": 14639186,
+      "canonical_company_count": 37863,
+      "eligible_sample_count": 37679,
+      "snapshot_version": "benchmark-2026-08-01-A-v1",
+      "source_bytes": 9560157,
+      "source_file_count": 10
+    },
+    "B": {
+      "canonical_bytes": 3677633,
+      "canonical_company_count": 9516,
+      "eligible_sample_count": 9500,
+      "snapshot_version": "benchmark-2026-08-01-B-v1",
+      "source_bytes": 2343372,
+      "source_file_count": 10
+    },
+    "C": {
+      "canonical_bytes": 70510581,
+      "canonical_company_count": 182552,
+      "eligible_sample_count": 181329,
+      "snapshot_version": "benchmark-2026-08-01-C-v1",
+      "source_bytes": 45909584,
+      "source_file_count": 10
+    },
+    "D": {
+      "canonical_bytes": 6570532,
+      "canonical_company_count": 16942,
+      "eligible_sample_count": 16831,
+      "snapshot_version": "benchmark-2026-08-01-D-v1",
+      "source_bytes": 4218000,
+      "source_file_count": 10
+    },
+    "E": {
+      "canonical_bytes": 86635725,
+      "canonical_company_count": 224455,
+      "eligible_sample_count": 223580,
+      "snapshot_version": "benchmark-2026-08-01-E-v1",
+      "source_bytes": 55153254,
+      "source_file_count": 10
+    },
+    "F": {
+      "canonical_bytes": 207439137,
+      "canonical_company_count": 538290,
+      "eligible_sample_count": 535081,
+      "snapshot_version": "benchmark-2026-08-01-F-v1",
+      "source_bytes": 133234309,
+      "source_file_count": 10
+    },
+    "G": {
+      "canonical_bytes": 16166021,
+      "canonical_company_count": 41795,
+      "eligible_sample_count": 41618,
+      "snapshot_version": "benchmark-2026-08-01-G-v1",
+      "source_bytes": 10374169,
+      "source_file_count": 10
+    },
+    "H": {
+      "canonical_bytes": 58877899,
+      "canonical_company_count": 152064,
+      "eligible_sample_count": 151041,
+      "snapshot_version": "benchmark-2026-08-01-H-v1",
+      "source_bytes": 37376938,
+      "source_file_count": 10
+    },
+    "I": {
+      "canonical_bytes": 136347082,
+      "canonical_company_count": 353128,
+      "eligible_sample_count": 350339,
+      "snapshot_version": "benchmark-2026-08-01-v1",
+      "source_bytes": 87596097,
+      "source_file_count": 10
+    },
+    "J": {
+      "canonical_bytes": 99632048,
+      "canonical_company_count": 258219,
+      "eligible_sample_count": 256464,
+      "snapshot_version": "benchmark-2026-08-01-J-v1",
+      "source_bytes": 63905591,
+      "source_file_count": 10
+    }
+  },
+  "sqlite_integrity_check": "ok",
+  "verified_at": "2026-08-23T08:19:05.163420Z"
+}

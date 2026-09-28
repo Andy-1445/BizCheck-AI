@@ -1,0 +1,20 @@
+{
+  "as_of": "2026-08-01",
+  "checksum_sha256": "95f2ce6a15ee1d829c828ce46905eaf888e2431503f6fb03ba86546b98a1009c",
+  "created_at": "2026-08-23T08:12:53.187579Z",
+  "excluded_record_count": 3209,
+  "exclusion_counts": {
+    "invalid_established_at": 13,
+    "invalid_registered_capital": 1994,
+    "status_not_active": 1202
+  },
+  "group_sample_sizes": {
+    "F": 535081
+  },
+  "industry_mapping_version": "gcis-regional-category-membership-v1",
+  "input_record_count": 538290,
+  "sample_count": 535081,
+  "source": "GCIS official nationwide F-category batch CSV (10 datasets)",
+  "source_version": "gcis-benchmark-F-2026-08-v1",
+  "version": "benchmark-2026-08-01-F-v1"
+}
